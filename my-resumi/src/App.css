@@ -1,0 +1,49 @@
+/* nav-style */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-white: rgb(246, 241, 241);
+  --orange: #f9ab00;
+  --dark: rgba(255, 255, 255, 0);
+}
+body {
+  font-family: "Roboto Condesed" sans-serif;
+}
+.logo {
+  width: 5rem;
+  border-radius: 1.2rem;
+}
+
+nav a.nav-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+ul {
+  margin-left: auto;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  /* border-top: 0.1875rem solid; */
+}
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important ;
+}
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--orange);
+}
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--orange);
+}
